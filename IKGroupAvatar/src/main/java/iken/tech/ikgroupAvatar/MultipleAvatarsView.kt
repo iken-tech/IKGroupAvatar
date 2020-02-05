@@ -23,7 +23,8 @@ class IKGroupAvatarView(context: Context, attrs: AttributeSet?) : RecyclerView(c
     private var remainColor:Int = Color.BLACK
     private var remainTextColor:Int = Color.LTGRAY
     private var remainTextSize:Float = 18f
-    private var avatarMargin:Int = 16
+    private var avatarPlaceHolder: Int = R.drawable.avatar_placeholder
+    private var avatarMargin: Int = -16
         get() = (field * Resources.getSystem().displayMetrics.density + 0.5f).toInt()
     var dataSource : MutableList<Any> = mutableListOf()
         set(value) {
@@ -39,7 +40,8 @@ class IKGroupAvatarView(context: Context, attrs: AttributeSet?) : RecyclerView(c
                 avatarMargin,
                 remainColor,
                 remainTextColor,
-                remainTextSize
+                remainTextSize,
+                avatarPlaceHolder
             )
         }
 
@@ -53,10 +55,14 @@ class IKGroupAvatarView(context: Context, attrs: AttributeSet?) : RecyclerView(c
         avatarBorder = a.getDimensionPixelSize(R.styleable.IKGroupAvatarView_avatar_border_size, 0)
         borderColor = a.getColor(R.styleable.IKGroupAvatarView_avatar_border_color, Color.BLACK)
         avatarSize = a.getDimensionPixelSize(R.styleable.IKGroupAvatarView_avatar_size, 38)
-        avatarMargin = a.getInt(R.styleable.IKGroupAvatarView_avatar_margin, 16)
+        avatarMargin = a.getInt(R.styleable.IKGroupAvatarView_avatar_margin, -16)
         remainColor = a.getColor(R.styleable.IKGroupAvatarView_remain_color, Color.LTGRAY)
         remainTextColor = a.getColor(R.styleable.IKGroupAvatarView_remain_count_text_color, Color.BLACK)
         remainTextSize = a.getFloat(R.styleable.IKGroupAvatarView_remain_count_text_size, 18f)
+        avatarPlaceHolder = a.getResourceId(
+            R.styleable.IKGroupAvatarView_avatar_placeholder,
+            R.drawable.avatar_placeholder
+        )
 
         a.recycle()
     }

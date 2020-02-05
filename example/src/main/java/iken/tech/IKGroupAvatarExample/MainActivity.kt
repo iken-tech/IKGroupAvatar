@@ -12,12 +12,12 @@ class MainActivity : AppCompatActivity() {
 
         val list = mutableListOf<Any>()
         list.add(R.drawable.ic_launcher_background)
-        list.add("http://dev.furnnmore.com/media/image/67/nike-strike-football.png")
-        list.add("http://dev.furnnmore.com/media/image/67/nike-strike-football.png")
-        list.add("http://dev.furnnmore.com/media/image/67/nike-strike-football.png")
-        list.add("http://dev.furnnmore.com/media/image/67/nike-strike-football.png")
-        list.add("http://dev.furnnmore.com/media/image/67/nike-strike-football.png")
-        list.add("http://dev.furnnmore.com/media/image/67/nike-strike-football.png")
+        list.add("https://avatarfiles.alphacoders.com/668/66833.jpg")
+        list.add("https://avatarfiles.alphacoders.com/668/66833.jpg")
+        list.add("https://avatarfiles.alphacoders.com/668/66833.jpg")
+        list.add("https://avatarfiles.alphacoders.com/668/66833.jpg")
+        list.add("https://avatarfiles.alphacoders.com/668/66833.jpg")
+        list.add("https://avatarfiles.alphacoders.com/668/66833.jpg")
 
         recyclerView.dataSource = list
     }
