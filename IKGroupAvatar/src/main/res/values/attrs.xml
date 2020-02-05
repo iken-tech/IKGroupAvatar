@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IKGroupAvatarView">
+        <attr name="avatar_border_size" format="dimension" />
+        <attr name="avatar_border_color" format="color" />
+        <attr name="item_limit" format="integer" />
+        <attr name="display_remaining_items" format="boolean" />
+        <attr name="avatar_size" format="dimension" />
+        <attr name="avatar_margin" format="integer" />
+        <attr name="remain_color" format="color" />
+        <attr name="remain_count_text_color" format="color" />
+        <attr name="remain_count_text_size" format="float" />
+    </declare-styleable>
+</resources>

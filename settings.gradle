@@ -1,0 +1,2 @@
+include ':example', ':IKGroupAvatar'
+rootProject.name='Multiple Avatars'
