@@ -1,5 +1,5 @@
 # IKGroupAvatar
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![MinSdk: 17](https://img.shields.io/badge/minSdk-17-green.svg)](https://developer.android.com/about/versions/android-4.0) [![write: Kotlin](https://img.shields.io/badge/write-Kotlin-orange.svg)](https://kotlinlang.org/) [![Release](https://jitpack.io/v/iken-tech/IKGroupAvatar.svg)](https://jitpack.io/#iken-tech/IKGroupAvatar)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![MinSdk: 19](https://img.shields.io/badge/minSdsk-19-green.svg)](https://developer.android.com/about/versions/android-4.4) [![write: Kotlin](https://img.shields.io/badge/write-Kotlin-orange.svg)](https://kotlinlang.org/) [![Release](https://jitpack.io/v/iken-tech/IKGroupAvatar.svg)](https://jitpack.io/#iken-tech/IKGroupAvatar)
 
 ![limited_list](https://raw.github.com/iken-tech/IKGroupAvatar/master/limited_list.png)
 ![full_list](https://raw.github.com/iken-tech/IKGroupAvatar/master/full_list.png)
@@ -17,11 +17,11 @@ allprojects {
 #### Step 2. Add the dependency
 ```kotlin
 dependencies {
-    implementation 'com.github.iken.tech:IKGroupAvatarView:Release'
+    implementation 'com.github.iken.tech:IKGroupAvatarView:0.1'
     implementation "androidx.recyclerview:recyclerview:1.1.0"
 }
 ```
-#### Step 3. Add CurveGraphView to your layout file
+#### Step 3. Add IKGroupAvatarView to your layout file
 ```xml
  <iken.tech.ikgroupAvatar.IKGroupAvatarView
         android:id="@+id/avatars_list"
