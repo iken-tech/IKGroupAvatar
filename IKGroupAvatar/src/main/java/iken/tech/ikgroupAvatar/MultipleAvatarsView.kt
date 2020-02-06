@@ -20,6 +20,7 @@ class IKGroupAvatarView(context: Context, attrs: AttributeSet?) : RecyclerView(c
     private var avatarBorder:Int = 0
     private var borderColor:Int = Color.BLACK
     private var avatarSize:Int = 38
+        get() = (field * Resources.getSystem().displayMetrics.density + 0.5f).toInt()
     private var remainColor:Int = Color.BLACK
     private var remainTextColor:Int = Color.LTGRAY
     private var remainTextSize:Float = 18f
