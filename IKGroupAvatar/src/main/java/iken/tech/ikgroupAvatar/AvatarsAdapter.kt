@@ -26,12 +26,13 @@ class AvatarsAdapter(
     var avatarMargin: Int,
     var remainColor: Int,
     var remainTextColor: Int,
-    var remainTextSize: Float
+    var remainTextSize: Float,
+    var avatarPlaceHolder: Int
 ) :
     RecyclerView.Adapter<ViewHolder>() {
 
     override fun getItemViewType(position: Int): Int {
-        return if (position < limit)
+        return if (position < limit || limit == 0)
             1
         else
             2
@@ -85,12 +86,13 @@ class AvatarsAdapter(
                     logoView.layoutParams.width,
                     logoView.layoutParams.height
                 )
-                param.setMargins(-avatarMargin, 0, 0, 0)
+                param.setMargins(avatarMargin, 0, 0, 0)
                 logoView.layoutParams = param
             }
 
             Glide.with(context)
                 .load(avatars[position])
+                .placeholder(avatarPlaceHolder)
                 .diskCacheStrategy(DiskCacheStrategy.NONE)
                 .skipMemoryCache(true)
                 .into(logoView)
@@ -110,7 +112,7 @@ class AvatarsAdapter(
                 remainView.layoutParams.width,
                 remainView.layoutParams.height
             )
-            param.setMargins(-avatarMargin, 0, 0, 0)
+            param.setMargins(avatarMargin, 0, 0, 0)
             remainView.layoutParams = param
 
             remainCircle.setColorFilter(remainColor)

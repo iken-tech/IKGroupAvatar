@@ -11,15 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-        app:item_limit="3"
-        app:display_remaining_items="true"
+        app:display_remaining_items="false"
         app:avatar_border_size="2dp"
         app:avatar_size="50dp"
-        app:avatar_margin="16"
+        app:avatar_margin="-16"
         app:avatar_border_color="@color/colorAccent"
         app:remain_color="@color/colorPrimary"
         app:remain_count_text_color="@android:color/black"
         app:remain_count_text_size="24"
+        app:avatar_placeholder="@drawable/ic_launcher_background"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -10,5 +10,6 @@
         <attr name="remain_color" format="color" />
         <attr name="remain_count_text_color" format="color" />
         <attr name="remain_count_text_size" format="float" />
+        <attr name="avatar_placeholder" format="reference" />
     </declare-styleable>
 </resources>
